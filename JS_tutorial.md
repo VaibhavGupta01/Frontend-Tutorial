@@ -4,7 +4,7 @@
 
 Basic Datatypes in javascript are :- String, Number, Boolean, null, undefined
 
-_There is another datatype called symbol which is rarely used_
+_(There is another datatype called symbol which is rarely used)_
 
 ```javascript
 const name = 'Brad';
@@ -15,8 +15,8 @@ const x = null;
 const y = undefined;
 let z; // undefined
 ```
-> * string can be defined using both 'single quote' and "double quotes"\
-> * no floats in javascript, decimals are also number
+> * string can be defined using both 'single quote' and "double quotes"
+> * no floats in javascript, decimals are also number datatype
 
 
 ### To check type of variable
@@ -35,10 +35,10 @@ console.log(`My name is ${name} and I am ${age}`);
 const numbers = [1,2,3,4,5];
 const fruits = ['apples', 'oranges', 'pears', 'grapes', 10, true];
 ```
-> * In JS, arrays can have multiple datatypes wihtin the same array\
+> * In JS, arrays can have multiple datatypes wihtin the same array
 > * You won't be able to re-assign a const array, for ex.\
 ` numbers = [];` \
-will give out error, although you can push new items in the array\
+will give out error, although you can push new items in the array \
 `numbers.push(10);` \
 this will work
 
@@ -58,7 +58,7 @@ const person = {
 ```
 > * You can add new properties on runtime\
 `person.email = 'jdoe@gmail.com';`
-> * You can pull variables out of the object and assign it to variables(destructuring)\
+> * You can pull variables out of the object and assign it to variables(destructuring) 
 > ```
 > const {firstName, address:{city}}  = person;
 > console.log(city);
@@ -112,7 +112,7 @@ const todoTextArray = todos.map(function(todo) {
 
 console.log(todoTextArray);
 ```
-map() loops and returns an array based on some condition
+filter() loops and returns an array based on some condition
 ```javascript
 // filter() - Returns array based on condition
 const todo1 = todos.filter(function(todo) {
@@ -140,11 +140,11 @@ if(x === 10) {
 }
 ```
 
-> In below example, the statement is stil true
+> In below example, the statement is still true
 > ```
 >const x = '10';
 >
->if(x === 10) {
+>if(x == 10) {
 >  console.log('x is 10');
 >}
 > ```
