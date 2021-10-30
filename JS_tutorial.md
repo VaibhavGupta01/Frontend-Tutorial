@@ -149,6 +149,31 @@ if(x === 10) {
 >}
 > ```
 
+## Functions
+
+```javascript
+function greet(greeting = 'Hello', name) {
+  if(!name) {
+    return greeting;
+  } else {
+    return `${greeting} ${name}`;
+  }
+}
+```
+## Arrow Functions
+
+```javascript
+const greet = (greeting = 'Hello', name = 'There') => `${greeting} ${name}`;
+console.log(greet('Hi'));
+```
+> * if single line body, arrow function expression can be written in single  line, otherwise, put inside '{ }'
+> * Additionally, you don't have to add 'return' statement, if you want to return something 
+> * Additionally, if you have just one param, you don't have to add paranthesis \
+`const addNums = num1 => num1 + 5;` \
+`console.log(addNums(5));`
+
+_TODO : check arrow functions scoping with this keyword_
+
 <!-- basic boilerplate snippet -->
 ## 
 
