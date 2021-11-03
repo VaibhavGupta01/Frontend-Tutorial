@@ -174,6 +174,27 @@ console.log(greet('Hi'));
 
 _TODO : check arrow functions scoping with this keyword_
 
+## Object Oriented Programming
+
+### Constructor Function
+
+```javascript
+function Person(firstName, lastName, dob) {
+  // Set object properties
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = new Date(dob); // Set to actual date object using Date constructor
+  this.getBirthYear = function(){
+    return this.dob.getFullYear();
+  }
+  this.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+```
+
+
+
 <!-- basic boilerplate snippet -->
 ## 
 
