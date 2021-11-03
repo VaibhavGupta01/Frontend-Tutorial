@@ -176,7 +176,7 @@ _TODO : check arrow functions scoping with this keyword_
 
 ## Object Oriented Programming
 
-### Constructor Function
+### Constructor Function (ES 5)
 
 ```javascript
 function Person(firstName, lastName, dob) {
@@ -191,15 +191,46 @@ function Person(firstName, lastName, dob) {
     return `${this.firstName} ${this.lastName}`
   }
 }
+
+// Instantiate an object from the class
+const person1 = new Person('John', 'Doe', '7-8-80');
+const person2 = new Person('Steve', 'Smith', '8-2-90');
+```
+> You can use prototypes in case you don't want to associate methods to every object \
+like this :
+ 
+```javascript
+// Get Birth Year
+Person.prototype.getBirthYear = function () {
+  return this.dob.getFullYear();
+}
+
+// Get Full Name
+Person.prototype.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`
+}
 ```
 
-
-
-<!-- basic boilerplate snippet -->
-## 
+## ES6 Classes
 
 ```javascript
+class Person {
+  constructor(firstName, lastName, dob) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+  }
 
+  // Get Birth Year
+  getBirthYear() {
+    return this.dob.getFullYear();
+  }
+
+  // Get Full Name
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
+}
 ```
 
 Source : [BradTraversy Video](https://www.youtube.com/watch?v=hdI2bqOjy3c)
